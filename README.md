@@ -14,8 +14,8 @@ ruby detail.rb 9080
 # Build Docker Image for details service
 docker build -t details .
 
-# Run details service on port 8080
-docker run -d --name details -p 8081:8081 details
+# Run details service on port 8081
+docker run -d --name details -p 8081:9080 details
 ```
 
 * Test with path `/health` and `/details/1`
